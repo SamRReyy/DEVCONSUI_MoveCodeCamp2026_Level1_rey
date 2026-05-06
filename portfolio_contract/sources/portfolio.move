@@ -60,7 +60,7 @@ module portfolio::portfolio {
         transfer::public_transfer(display, tx_context::sender(ctx));
     }
 
-    public fun create_portfolio(
+    public entry fun create_portfolio(
         name: String,
         course: String,
         school: String,
